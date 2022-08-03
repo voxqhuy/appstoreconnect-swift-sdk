@@ -80,7 +80,7 @@ public struct XcodeMetrics: Codable {
 						public var version: String?
 						public var value: Double?
 						public var errorMargin: Double?
-						public var percentageBreakdown: PercentageBreakdown?
+						public var percentageBreakdown: [PercentageBreakdown]?
 						public var goal: String?
 
 						public struct PercentageBreakdown: Codable {
@@ -93,7 +93,7 @@ public struct XcodeMetrics: Codable {
 							}
 						}
 
-						public init(version: String? = nil, value: Double? = nil, errorMargin: Double? = nil, percentageBreakdown: PercentageBreakdown? = nil, goal: String? = nil) {
+						public init(version: String? = nil, value: Double? = nil, errorMargin: Double? = nil, percentageBreakdown: [PercentageBreakdown]? = nil, goal: String? = nil) {
 							self.version = version
 							self.value = value
 							self.errorMargin = errorMargin
