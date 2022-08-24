@@ -9,7 +9,7 @@ public struct MetricsInsight: Codable {
 	public var latestVersion: String?
 	public var metric: String?
 	public var summaryString: String?
-	public var referenceVersions: String?
+	public var referenceVersions: [String]?
 	public var maxLatestVersionValue: Double?
 	public var subSystemLabel: String?
 	public var isHighImpact: Bool?
